@@ -27,7 +27,7 @@ int main() {
     pid_t pid = fork();
 
     if (pid == 0) {
-        execl("./process2", "process2", NULL);
+        execl("./process2_shm", "process2_shm", NULL);
         perror("exec failed");
         exit(1);
     } else {

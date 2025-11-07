@@ -22,6 +22,10 @@ int main () {
 
     int cycle = 0;
 
+    while(shared[1] <= 100) {
+        usleep(100000);
+    }
+
     while(shared[1] <= -500) {
         if (shared[1] % shared[0] == 0) {
             printf("(Process 2) Cycle %d - %d is a multiple of %d\n", cycle, shared[1], shared[0]);
