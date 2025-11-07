@@ -18,16 +18,10 @@ int main() {
         int counter = 0;
         int cycle = 0;
 
-        while (1) {
-            if (counter % 3 == 0) {
-                printf("cycle %d - %d is a multiple of 3 (Process 1)\n)", cycle, counter);
+        printf("Process 1 started... waiting for process 2 (child).\n");
 
-            } else {
-                printf("Cycle %d\n", cycle);
-            }
-            counter++;
-            cycle++;
-            usleep(50000);
-        }
+        wait(NULL);
+        printf("Process 2 finished... terminating process 1.\n");
    }
+   return 0;
 }
