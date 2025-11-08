@@ -11,7 +11,7 @@ int main() {
     }
 
     if (pid == 0) {
-        execl("./process2", "process2", NULL);
+        execl("./process2_101302762_101294584", "process2_101302762_101294584", NULL);
         perror("exec failed");
         return 1;
     } else {
