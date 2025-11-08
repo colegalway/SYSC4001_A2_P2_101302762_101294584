@@ -35,7 +35,7 @@ int main() {
     pid_t pid = fork();
 
     if (pid == 0) {
-        execl("./process2_sem", "process2_sem", NULL);
+        execl("./process2_sem_101302762_101294584", "process2_sem_101302762_101294584", NULL);
         perror("exec failed");
         exit(1);
     } else {
